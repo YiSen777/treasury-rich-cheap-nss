@@ -1,0 +1,57 @@
+Fetching FRED Treasury yield data...
+
+Yield data sample:
+              3M    6M    1Y    2Y    3Y    5Y    7Y   10Y   20Y   30Y
+DATE                                                                  
+2010-01-04  0.08  0.18  0.45  1.09  1.66  2.65  3.36  3.85  4.60  4.65
+2010-01-05  0.07  0.17  0.41  1.01  1.57  2.56  3.28  3.77  4.54  4.59
+2010-01-06  0.06  0.15  0.40  1.01  1.60  2.60  3.33  3.85  4.63  4.70
+2010-01-07  0.05  0.16  0.40  1.03  1.62  2.62  3.33  3.85  4.62  4.69
+2010-01-08  0.05  0.15  0.37  0.96  1.56  2.57  3.31  3.83  4.61  4.70
+
+Running KMO test...
+
+KMO Test Results:
+Overall KMO: 0.8898
+Interpretation: great
+
+KMO by Maturity:
+3M     0.7821
+6M     0.8192
+1Y     0.8972
+2Y     0.9130
+3Y     0.9127
+5Y     0.9075
+7Y     0.8955
+10Y    0.9242
+20Y    0.8652
+30Y    0.8610
+Name: KMO, dtype: float64
+
+Running PCA analysis...
+2026-05-25 13:35:58.782 python[6545:155941] +[IMKClient subclass]: chose IMKClient_Legacy
+2026-05-25 13:35:58.782 python[6545:155941] +[IMKInputSession subclass]: chose IMKInputSession_Legacy
+2026-05-25 13:36:01.153 python[6545:155941] The class 'NSSavePanel' overrides the method identifier.  This method is implemented by class 'NSWindow'
+
+PCA Explained Variance:
+PC1_Level        0.683784
+PC2_Slope        0.173219
+PC3_Curvature    0.076222
+dtype: float64
+Calibrating NSS curve day by day...
+
+NSS parameter sample:
+               beta0     beta1     beta2      tau1     beta3      tau2
+DATE                                                                  
+2024-12-26  0.048990 -0.004902 -0.004863  0.704155 -0.012056  1.867091
+2024-12-27  0.049658 -0.005978 -0.005551  0.704157 -0.012492  1.867091
+2024-12-30  0.049199 -0.004591 -0.007622  0.704092 -0.013143  1.867134
+2024-12-31  0.049407 -0.004680 -0.008675  0.704010 -0.012927  1.867166
+2025-01-01  0.049407 -0.004680 -0.008675  0.704010 -0.012927  1.867166
+
+Performance Summary:
+               Name  Total Return      CAGR  Annual Return  Annual Volatility  Sharpe Ratio  Sortino Ratio  Calmar Ratio  Max Drawdown  Hit Rate  Observations
+Rich-Cheap Strategy      0.180294  0.010732       0.011426           0.038777      0.294653       0.330641      0.112491     -0.095407  0.311781          3913
+           Long 10Y     -0.089086 -0.005993      -0.003762           0.067067     -0.056093      -0.085665     -0.019506     -0.307218  0.450153          3912
+           Long 20Y     -0.147360 -0.010217      -0.002512           0.124527     -0.020175      -0.030181     -0.020256     -0.504383  0.451687          3912
+ Equal Weight Curve     -0.060987 -0.004045      -0.002991           0.046103     -0.064875      -0.097087     -0.017243     -0.234603  0.490031          3912
