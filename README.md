@@ -1,4 +1,4 @@
-# Treasury Rich-Cheap Strategy with NSS Curve Fitting
+# U.S. Treasury Rich-Cheap Strategy with NSS Curve Fitting
 
 This project implements a fixed-income relative-value research pipeline for the U.S. Treasury curve. It downloads Treasury yield data from FRED, fits a Nelson-Siegel-Svensson (NSS) fair-value curve, identifies rich and cheap maturity buckets from residual z-scores, and backtests a duration-adjusted long-cheap / short-rich strategy.
 
