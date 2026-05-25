@@ -14,7 +14,6 @@ Built a Python-based Treasury relative-value strategy that calibrates Nelson-Sie
 - Backtests net returns with turnover-based transaction costs.
 - Benchmarks the strategy against long 10Y, long 20Y, and equal-weight Treasury curve exposures.
 - Includes KMO and PCA analysis to support level, slope, and curvature interpretation.
-- Adds English explanatory comments before major code blocks for recruiter and reviewer readability.
 
 ## Methodology
 
